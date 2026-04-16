@@ -114,7 +114,6 @@ async function loadTransactions() {
     const profileIncomeNote = document.getElementById("profileIncomeNote");
     if (profileIncomeNote) {
       if (profileIncome > 0) {
-        profileIncomeNote.innerText = `ℹ️ Base income of ₹${profileIncome.toLocaleString("en-IN")}/month auto-loaded from your profile.`;
         profileIncomeNote.style.display = "block";
       } else {
         profileIncomeNote.innerText = "ℹ️ No stipend/CTC set in your profile. Update your profile to auto-fill income.";
